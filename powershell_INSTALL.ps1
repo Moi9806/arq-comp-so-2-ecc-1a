@@ -29,3 +29,4 @@ sudo apt-get install -y powershell
  
 # Start PowerShell
 pwsh
+
