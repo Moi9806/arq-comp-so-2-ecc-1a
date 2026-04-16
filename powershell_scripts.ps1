@@ -1,14 +1,21 @@
-# Elimina archivos temporales del sistema
-Write-Host "Limpiando archivos temporales..."
 
-Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+$lista = @(1, 2, 3)
+foreach ($item in $lista) {
+Write-Host $item
+}
 
-Write-Host "Limpieza completada."
+$x = 0
+while ($x -lt 3) {
+Write-Host $x
+$x++
+}
 
-# Copia archivos de una carpeta a otra (backup)
-$origen = "C:\MisDocumentos"
-$destino = "D:\Backup"
+ion Sumar($a, $b) {
+return $a + $b
+}
+Sumar 5 7 # Devuelve 12
 
-Copy-Item -Path $origen -Destination $destino -Recurse -Force
-
-Write-Host "Backup completado."
+Function Sumar($a, $b) {
+    return $a + $b
+}
+Write-Host (5 7) # Devuelve 12
